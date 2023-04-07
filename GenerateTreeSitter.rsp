@@ -27,7 +27,7 @@ tree-sitter/lib/include/tree_sitter/parser.h
 --output
 ./TreeSitter.Bindings/
 --test-output
-./TreeSitter.Bindings.Tests/
+./TreeSitter.Bindings.UnitTests/
 --namespace
 TreeSitter.Bindings
 --libraryPath 
