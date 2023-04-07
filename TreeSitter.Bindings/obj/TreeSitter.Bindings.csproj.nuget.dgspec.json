@@ -1,0 +1,68 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/davide/repos/TreeSitter.Bindings/TreeSitter.Bindings/TreeSitter.Bindings.csproj": {}
+  },
+  "projects": {
+    "/home/davide/repos/TreeSitter.Bindings/TreeSitter.Bindings/TreeSitter.Bindings.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/davide/repos/TreeSitter.Bindings/TreeSitter.Bindings/TreeSitter.Bindings.csproj",
+        "projectName": "TreeSitter.Bindings",
+        "projectPath": "/home/davide/repos/TreeSitter.Bindings/TreeSitter.Bindings/TreeSitter.Bindings.csproj",
+        "packagesPath": "/home/davide/.nuget/packages/",
+        "outputPath": "/home/davide/repos/TreeSitter.Bindings/TreeSitter.Bindings/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/davide/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/davidelettieri/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "ClangSharp.Interop": {
+              "target": "Package",
+              "version": "[15.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/7.0.104/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

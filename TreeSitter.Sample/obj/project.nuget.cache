@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "J0MyiUg19rYq9OYnWjUkNZg2byUdqWAyOdyomInsWuMTOlgHC3tkvDFmBnWFt95aCmi8yZQlxytFmjdmVaA4iA==",
+  "success": true,
+  "projectFilePath": "/home/davide/repos/TreeSitter.Bindings/TreeSitter.Sample/TreeSitter.Sample.csproj",
+  "expectedPackageFiles": [
+    "/home/davide/.nuget/packages/clangsharp.interop/15.0.2/clangsharp.interop.15.0.2.nupkg.sha512",
+    "/home/davide/.nuget/packages/libclang/15.0.0/libclang.15.0.0.nupkg.sha512",
+    "/home/davide/.nuget/packages/libclangsharp/15.0.0/libclangsharp.15.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
