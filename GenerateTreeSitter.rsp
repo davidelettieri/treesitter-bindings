@@ -1,7 +1,6 @@
 --config
 compatible-codegen
 exclude-com-proxies
-exclude-empty-records
 exclude-enum-operators
 generate-aggressive-inlining
 generate-cpp-attributes
@@ -24,9 +23,12 @@ unix-types
 /lib64/clang/15.0.7/include
 --file
 tree-sitter/lib/include/tree_sitter/api.h
+tree-sitter/lib/include/tree_sitter/parser.h
 --output
-./sources/TreeSitter/Interop.cs
+./TreeSitter.Bindings/
 --test-output
-./tests/TreeSitter/InteropTests.cs
+./TreeSitter.Bindings.Tests/
 --namespace
-TreeSitter
+TreeSitter.Bindings
+--libraryPath 
+libtree-sitter

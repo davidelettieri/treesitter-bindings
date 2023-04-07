@@ -1,0 +1,6 @@
+/home/davide/repos/TreeSitter.Bindings/TreeSitter.Bindings.Tests/obj/Debug/net7.0/TreeSitter.Bindings.Tests.csproj.AssemblyReference.cache
+/home/davide/repos/TreeSitter.Bindings/TreeSitter.Bindings.Tests/obj/Debug/net7.0/TreeSitter.Bindings.Tests.GeneratedMSBuildEditorConfig.editorconfig
+/home/davide/repos/TreeSitter.Bindings/TreeSitter.Bindings.Tests/obj/Debug/net7.0/TreeSitter.Bindings.Tests.AssemblyInfoInputs.cache
+/home/davide/repos/TreeSitter.Bindings/TreeSitter.Bindings.Tests/obj/Debug/net7.0/TreeSitter.Bindings.Tests.AssemblyInfo.cs
+/home/davide/repos/TreeSitter.Bindings/TreeSitter.Bindings.Tests/obj/Debug/net7.0/TreeSitter.Bindings.Tests.csproj.CoreCompileInputs.cache
+/home/davide/repos/TreeSitter.Bindings/TreeSitter.Bindings.Tests/bin/Debug/net7.0/CoverletSourceRootsMapping
