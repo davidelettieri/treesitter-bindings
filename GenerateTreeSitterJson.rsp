@@ -21,12 +21,13 @@ trimmable-vtbls
 unix-types
 --include-directory 
 /lib64/clang/15.0.7/include
+tree-sitter/lib/include
 --file
 tree-sitter-json/bindings/c/json.h
 --output
 ./TreeSitter.Bindings/Json
 --test-output
-./TreeSitter.Bindings.Tests/Json
+./TreeSitter.Bindings.UnitTests/Json
 --namespace
 TreeSitter.Bindings.Json
 --libraryPath 

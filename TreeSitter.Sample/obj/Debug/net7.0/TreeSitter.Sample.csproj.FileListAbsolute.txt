@@ -21,3 +21,7 @@
 /home/davide/repos/TreeSitter.Bindings/TreeSitter.Sample/bin/Debug/net7.0/libtree-sitter.so
 /home/davide/repos/TreeSitter.Bindings/TreeSitter.Sample/bin/Debug/net7.0/libtree-sitter.so.0
 /home/davide/repos/TreeSitter.Bindings/TreeSitter.Sample/bin/Debug/net7.0/libtree-sitter.so.0.0
+/home/davide/repos/TreeSitter.Bindings/TreeSitter.Sample/bin/Debug/net7.0/libtree-sitter-json.a
+/home/davide/repos/TreeSitter.Bindings/TreeSitter.Sample/bin/Debug/net7.0/libtree-sitter-json.so
+/home/davide/repos/TreeSitter.Bindings/TreeSitter.Sample/bin/Debug/net7.0/libtree-sitter-json.so.0
+/home/davide/repos/TreeSitter.Bindings/TreeSitter.Sample/bin/Debug/net7.0/libtree-sitter-json.so.0.0

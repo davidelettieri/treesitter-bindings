@@ -1,6 +1,6 @@
 using System.Diagnostics;
 
-namespace TreeSitter.Bindings;
+namespace TreeSitter.Bindings.Helpers;
 
 [Conditional("DEBUG")]
 [AttributeUsage(AttributeTargets.All, AllowMultiple = false, Inherited = true)]
