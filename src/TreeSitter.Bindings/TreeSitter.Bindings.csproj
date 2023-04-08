@@ -10,18 +10,8 @@
         <RepositoryType>git</RepositoryType>
         <Authors>Davide Lettieri</Authors>
     </PropertyGroup>
-
     <ItemGroup>
-        <Content Include="libtree-sitter.so" >
-          <Pack>true</Pack>
-          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </Content>
-        <Content Include="libtree-sitter-json.so">
-          <Pack>true</Pack>
-          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </Content>
-    </ItemGroup>
-    <ItemGroup>
+      <PackageReference Include="libtreesitter" Version="0.20.8" />
       <PackageReference Include="MinVer" Version="4.3.0">
         <PrivateAssets>all</PrivateAssets>
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
