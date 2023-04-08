@@ -8,7 +8,7 @@ on:
       - '*.*.*'
     paths-ignore:
       - 'tree-sitter-packages/**'
-      - 'tree-sitter-/**'
+      - 'tree-sitter/**'
       - 'tree-sitter-json/**'
 
 jobs:
