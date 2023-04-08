@@ -4,7 +4,6 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageProjectUrl>https://github.com/davidelettieri/treesitter-bindings.git</PackageProjectUrl>
         <License>https://github.com/davidelettieri/treesitter-bindings/blob/main/LICENSE</License>
         <RepositoryUrl>https://github.com/davidelettieri/treesitter-bindings.git</RepositoryUrl>
