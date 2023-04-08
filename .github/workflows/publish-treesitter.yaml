@@ -15,7 +15,7 @@ jobs:
       - name: Install Minver
         run: dotnet tool install --global minver-cli --version 4.3.0
       - name: Pack libtreesitter
-        run: nuget pack tree-sitter-packages/libtreesitter/libtreesitter.nuspec -Version $(minver -v e -p alpha -t libtreesitter)
+        run: nuget pack tree-sitter-packages/libtreesitter/libtreesitter.nuspec -Version $(minver -v e -p alpha -t treesitter)
       - name: Pack libtreesitter.runtime.linux-x64
         run: nuget pack tree-sitter-packages/libtreesitter.runtime.linux-x64/libtreesitter.runtime.linux-x64.nuspec -Version $(minver -v e -p alpha -t libtreesitter)      
       - name: Login to github registry
