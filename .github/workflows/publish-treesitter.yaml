@@ -1,7 +1,7 @@
 name: Publish TreeSitter
 
 on:
-  workflow_call:
+  workflow_dispatch:
     
 jobs:
   build:
