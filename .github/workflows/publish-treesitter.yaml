@@ -12,12 +12,10 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: 7.0.x
-      - name: Install Minver
-        run: dotnet tool install --global minver-cli --version 4.3.0
       - name: Pack libtreesitter
-        run: nuget pack tree-sitter-packages/libtreesitter/libtreesitter.nuspec -Version $(minver -v e -p alpha -t treesitter)
+        run: nuget pack tree-sitter-packages/libtreesitter/libtreesitter.nuspec
       - name: Pack libtreesitter.runtime.linux-x64
-        run: nuget pack tree-sitter-packages/libtreesitter.runtime.linux-x64/libtreesitter.runtime.linux-x64.nuspec -Version $(minver -v e -p alpha -t libtreesitter)      
+        run: nuget pack tree-sitter-packages/libtreesitter.runtime.linux-x64/libtreesitter.runtime.linux-x64.nuspec  
       - name: Login to github registry
         run: dotnet nuget add source --username treesitter-bindings --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/davidelettieri/index.json"
       - name: Publish libtreesitter package to GHR
