@@ -25,5 +25,9 @@ jobs:
         run: dotnet build --configuration Release --no-restore
       - name: Test
         run: dotnet test --no-restore --verbosity normal
+      - name: Pack
+        run: dotnet pack --no-build -c Release
+      - name: Login to github registry
+        run: dotnet nuget add source --username treesitter-bindings --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/davidelettieri/index.json"
       - name: Publish the package to GPR
-        run: dotnet nuget push src/TreeSitter.Bindings/bin/Release/*.nupkg
+        run: dotnet nuget push src/TreeSitter.Bindings/bin/Release/*.nupkg  --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"
