@@ -6,6 +6,10 @@ on:
       - main
     tags:        
       - '*.*.*'
+    paths-ignore:
+      - 'tree-sitter-packages/**'
+      - 'tree-sitter-/**'
+      - 'tree-sitter-json/**'
 
 jobs:
   build:
