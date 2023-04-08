@@ -19,6 +19,6 @@ jobs:
       - name: Login to github registry
         run: dotnet nuget add source --username treesitter-bindings --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/davidelettieri/index.json"
       - name: Publish libtreesitter.runtime.linux-x64 package to GHR
-        run: dotnet nuget push tree-sitter-packages/libtreesitter.runtime.linux-x64/libtreesitter.runtime.linux-x64.nupkg  --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"
+        run: dotnet nuget push tree-sitter-packages/libtreesitter.runtime.linux-x64/*.nupkg  --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"
       - name: Publish libtreesitter package to GHR
-        run: dotnet nuget push tree-sitter-packages/libtreesitter/libtreesitter.nupkg  --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"
+        run: dotnet nuget push tree-sitter-packages/libtreesitter/*.nupkg  --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"
