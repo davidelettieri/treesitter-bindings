@@ -32,3 +32,7 @@ tree-sitter/lib/include/tree_sitter/parser.h
 TreeSitter.Bindings
 --libraryPath 
 libtree-sitter
+--prefixStrip
+ts_
+--methodClassName
+TSBindings
