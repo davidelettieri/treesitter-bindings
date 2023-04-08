@@ -11,28 +11,10 @@
         <ProjectReference Include="..\TreeSitter.Bindings\TreeSitter.Bindings.csproj" />
     </ItemGroup>
     <ItemGroup>
-      <None Update="libtree-sitter.a">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
       <None Update="libtree-sitter.so">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
-      <None Update="libtree-sitter.so.0">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
-      <None Update="libtree-sitter.so.0.0">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
-      <None Update="libtree-sitter-json.a">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
       <None Update="libtree-sitter-json.so">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
-      <None Update="libtree-sitter-json.so.0">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
-      <None Update="libtree-sitter-json.so.0.0">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
     </ItemGroup>

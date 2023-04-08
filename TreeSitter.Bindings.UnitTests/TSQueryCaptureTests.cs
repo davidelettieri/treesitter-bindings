@@ -1,4 +1,6 @@
+using System;
 using System.Runtime.InteropServices;
+using Xunit;
 
 namespace TreeSitter.Bindings.UnitTests;
 

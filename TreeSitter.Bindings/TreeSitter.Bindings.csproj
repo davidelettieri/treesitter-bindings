@@ -11,4 +11,8 @@
       <PackageReference Include="ClangSharp.Interop" Version="15.0.2" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Json\" />
+    </ItemGroup>
+
 </Project>
