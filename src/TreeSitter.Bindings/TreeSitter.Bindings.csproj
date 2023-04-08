@@ -8,6 +8,8 @@
         <License>https://github.com/davidelettieri/treesitter-bindings/blob/main/LICENSE</License>
         <RepositoryUrl>https://github.com/davidelettieri/treesitter-bindings.git</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
+        <Authors>Davide Lettieri</Authors>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     </PropertyGroup>
 
     <ItemGroup>
