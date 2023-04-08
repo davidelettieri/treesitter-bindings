@@ -1,0 +1,23 @@
+name: Publish TreeSitter
+
+on:
+  workflow_call:
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 7.0.x
+      - name: Pack libtreesitter
+        run: nuget pack tree-sitter-packages/libtreesitter.nuspec
+      - name: Pack libtreesitter.runtime.linux-x64
+        run: nuget pack tree-sitter-packages/libtreesitter.runtime.linux-x64.nuspec        
+      - name: Login to github registry
+        run: dotnet nuget add source --username treesitter-bindings --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/davidelettieri/index.json"
+      - name: Publish the package to GPR
+        run: dotnet nuget push tree-sitter-packages/**/*.nupkg  --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"
+
