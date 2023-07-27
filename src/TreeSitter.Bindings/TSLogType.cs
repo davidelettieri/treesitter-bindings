@@ -4,5 +4,5 @@ namespace TreeSitter.Bindings;
 public enum TSLogType : uint
 {
     TSLogTypeParse,
-    TSLogTypeLex
+    TSLogTypeLex,
 }

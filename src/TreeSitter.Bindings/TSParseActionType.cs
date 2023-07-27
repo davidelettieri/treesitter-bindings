@@ -6,5 +6,5 @@ public enum TSParseActionType : uint
     TSParseActionTypeShift,
     TSParseActionTypeReduce,
     TSParseActionTypeAccept,
-    TSParseActionTypeRecover
+    TSParseActionTypeRecover,
 }

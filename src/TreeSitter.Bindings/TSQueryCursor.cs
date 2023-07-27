@@ -1,5 +1,5 @@
 namespace TreeSitter.Bindings;
 
-public struct TSQueryCursor
+public partial struct TSQueryCursor
 {
 }

@@ -9,5 +9,5 @@ public enum TSQueryError : uint
     TSQueryErrorField,
     TSQueryErrorCapture,
     TSQueryErrorStructure,
-    TSQueryErrorLanguage
+    TSQueryErrorLanguage,
 }

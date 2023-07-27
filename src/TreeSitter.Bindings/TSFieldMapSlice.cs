@@ -1,8 +1,10 @@
 namespace TreeSitter.Bindings;
 
-public struct TSFieldMapSlice
+public partial struct TSFieldMapSlice
 {
-    [NativeTypeName("uint16_t")] public ushort index;
+    [NativeTypeName("uint16_t")]
+    public ushort index;
 
-    [NativeTypeName("uint16_t")] public ushort length;
+    [NativeTypeName("uint16_t")]
+    public ushort length;
 }

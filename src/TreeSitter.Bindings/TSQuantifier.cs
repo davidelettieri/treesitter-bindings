@@ -7,5 +7,5 @@ public enum TSQuantifier : uint
     TSQuantifierZeroOrOne,
     TSQuantifierZeroOrMore,
     TSQuantifierOne,
-    TSQuantifierOneOrMore
+    TSQuantifierOneOrMore,
 }

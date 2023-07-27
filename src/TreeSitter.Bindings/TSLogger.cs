@@ -1,6 +1,6 @@
 namespace TreeSitter.Bindings;
 
-public unsafe struct TSLogger
+public unsafe partial struct TSLogger
 {
     public void* payload;
 

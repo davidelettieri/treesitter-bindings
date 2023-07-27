@@ -1,6 +1,6 @@
 namespace TreeSitter.Bindings;
 
-public unsafe struct TSInput
+public unsafe partial struct TSInput
 {
     public void* payload;
 

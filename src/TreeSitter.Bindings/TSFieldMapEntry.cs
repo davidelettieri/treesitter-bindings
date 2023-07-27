@@ -1,10 +1,13 @@
 namespace TreeSitter.Bindings;
 
-public struct TSFieldMapEntry
+public partial struct TSFieldMapEntry
 {
-    [NativeTypeName("TSFieldId")] public ushort field_id;
+    [NativeTypeName("TSFieldId")]
+    public ushort field_id;
 
-    [NativeTypeName("uint8_t")] public byte child_index;
+    [NativeTypeName("uint8_t")]
+    public byte child_index;
 
-    [NativeTypeName("bool")] public byte inherited;
+    [NativeTypeName("bool")]
+    public byte inherited;
 }

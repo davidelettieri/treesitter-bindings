@@ -1,5 +1,5 @@
 namespace TreeSitter.Bindings;
 
-public struct TSParser
+public partial struct TSParser
 {
 }

@@ -1,10 +1,12 @@
 namespace TreeSitter.Bindings;
 
-public unsafe struct TSLexer
+public unsafe partial struct TSLexer
 {
-    [NativeTypeName("int32_t")] public int lookahead;
+    [NativeTypeName("int32_t")]
+    public int lookahead;
 
-    [NativeTypeName("TSSymbol")] public ushort result_symbol;
+    [NativeTypeName("TSSymbol")]
+    public ushort result_symbol;
 
     [NativeTypeName("void (*)(TSLexer *, bool)")]
     public delegate* unmanaged[Cdecl]<TSLexer*, byte, void> advance;

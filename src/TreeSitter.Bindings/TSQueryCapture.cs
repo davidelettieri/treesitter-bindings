@@ -1,8 +1,9 @@
 namespace TreeSitter.Bindings;
 
-public struct TSQueryCapture
+public partial struct TSQueryCapture
 {
     public TSNode node;
 
-    [NativeTypeName("uint32_t")] public uint index;
+    [NativeTypeName("uint32_t")]
+    public uint index;
 }
