@@ -1,5 +1,5 @@
 namespace TreeSitter.Bindings;
 
-public struct TSQuery
+public partial struct TSQuery
 {
 }

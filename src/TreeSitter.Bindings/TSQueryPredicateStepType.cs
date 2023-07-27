@@ -5,5 +5,5 @@ public enum TSQueryPredicateStepType : uint
 {
     TSQueryPredicateStepTypeDone,
     TSQueryPredicateStepTypeCapture,
-    TSQueryPredicateStepTypeString
+    TSQueryPredicateStepTypeString,
 }

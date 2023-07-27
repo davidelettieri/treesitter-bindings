@@ -5,36 +5,48 @@ namespace TreeSitter.Bindings;
 [StructLayout(LayoutKind.Explicit)]
 public partial struct TSParseAction
 {
-    [FieldOffset(0)] [NativeTypeName("struct (anonymous struct at tree-sitter/lib/include/tree_sitter/parser.h:61:3)")]
+    [FieldOffset(0)]
+    [NativeTypeName("struct (anonymous struct at tree-sitter/lib/include/tree_sitter/parser.h:61:3)")]
     public _shift_e__Struct shift;
 
-    [FieldOffset(0)] [NativeTypeName("struct (anonymous struct at tree-sitter/lib/include/tree_sitter/parser.h:67:3)")]
+    [FieldOffset(0)]
+    [NativeTypeName("struct (anonymous struct at tree-sitter/lib/include/tree_sitter/parser.h:67:3)")]
     public _reduce_e__Struct reduce;
 
-    [FieldOffset(0)] [NativeTypeName("uint8_t")]
+    [FieldOffset(0)]
+    [NativeTypeName("uint8_t")]
     public byte type;
 
-    public struct _shift_e__Struct
+    public partial struct _shift_e__Struct
     {
-        [NativeTypeName("uint8_t")] public byte type;
+        [NativeTypeName("uint8_t")]
+        public byte type;
 
-        [NativeTypeName("TSStateId")] public ushort state;
+        [NativeTypeName("TSStateId")]
+        public ushort state;
 
-        [NativeTypeName("bool")] public byte extra;
+        [NativeTypeName("bool")]
+        public byte extra;
 
-        [NativeTypeName("bool")] public byte repetition;
+        [NativeTypeName("bool")]
+        public byte repetition;
     }
 
-    public struct _reduce_e__Struct
+    public partial struct _reduce_e__Struct
     {
-        [NativeTypeName("uint8_t")] public byte type;
+        [NativeTypeName("uint8_t")]
+        public byte type;
 
-        [NativeTypeName("uint8_t")] public byte child_count;
+        [NativeTypeName("uint8_t")]
+        public byte child_count;
 
-        [NativeTypeName("TSSymbol")] public ushort symbol;
+        [NativeTypeName("TSSymbol")]
+        public ushort symbol;
 
-        [NativeTypeName("int16_t")] public short dynamic_precedence;
+        [NativeTypeName("int16_t")]
+        public short dynamic_precedence;
 
-        [NativeTypeName("uint16_t")] public ushort production_id;
+        [NativeTypeName("uint16_t")]
+        public ushort production_id;
     }
 }
