@@ -84,7 +84,7 @@ public unsafe partial struct TSLanguage
     [NativeTypeName("TSSymbol")]
     public ushort keyword_capture_token;
 
-    [NativeTypeName("struct (anonymous struct at tree-sitter/lib/include/tree_sitter/parser.h:117:3)")]
+    [NativeTypeName("__AnonymousRecord_parser_L117_C3")]
     public _external_scanner_e__Struct external_scanner;
 
     [NativeTypeName("const TSStateId *")]
