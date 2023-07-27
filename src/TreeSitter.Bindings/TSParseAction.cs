@@ -6,11 +6,11 @@ namespace TreeSitter.Bindings;
 public partial struct TSParseAction
 {
     [FieldOffset(0)]
-    [NativeTypeName("struct (anonymous struct at tree-sitter/lib/include/tree_sitter/parser.h:61:3)")]
+    [NativeTypeName("__AnonymousRecord_parser_L61_C3")]
     public _shift_e__Struct shift;
 
     [FieldOffset(0)]
-    [NativeTypeName("struct (anonymous struct at tree-sitter/lib/include/tree_sitter/parser.h:67:3)")]
+    [NativeTypeName("__AnonymousRecord_parser_L67_C3")]
     public _reduce_e__Struct reduce;
 
     [FieldOffset(0)]
