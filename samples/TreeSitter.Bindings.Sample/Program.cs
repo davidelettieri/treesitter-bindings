@@ -1,5 +1,5 @@
 ﻿using System.Diagnostics;
-using TreeSitter.Bindings.Helpers;
+using ClangSharp.Interop;
 using static TreeSitter.Bindings.Json.TSBindingsJson;
 using static TreeSitter.Bindings.TSBindings;
 
