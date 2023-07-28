@@ -1,19 +1,15 @@
 ##
 
-Download runtime
+Open the folder with `Dev Containers`.
 
-https://www.nuget.org/packages/libClangSharp.runtime.linux-x64/15.0.0
+Run the `build.sh` script from the root folder to generate the bindings. 
 
-Install 
-
-sudo dnf install ncurses-compat-libs.x86_64
-
-### Troubleshooting 
-
-For errors like 
-
-```
-tree-sitter/lib/include/tree_sitter/parser.h:8:10: fatal error: 'stdbool.h' file not found
+```bash
+bash scripts/build.sh
 ```
 
-check the `--include-directory` option in the rsp files and be sure that is pointing to the correct clang folder
+Run the sample from the root folder
+
+```
+dotnet run --project samples/TreeSitter.Bindings.Sample/TreeSitter.Bindings.Sample.csproj 
+```

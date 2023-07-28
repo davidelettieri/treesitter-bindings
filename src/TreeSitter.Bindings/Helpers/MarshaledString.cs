@@ -1,9 +1,10 @@
 // Copyright (c) .NET Foundation and Contributors. All Rights Reserved. Licensed under the MIT License (MIT). See License.md in the repository root for more information.
 
+using System;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace TreeSitter.Bindings.Helpers;
+namespace ClangSharp.Interop;
 
 public unsafe struct MarshaledString : IDisposable
 {
@@ -19,7 +20,7 @@ public unsafe struct MarshaledString : IDisposable
         }
         else
         {
-            var valueBytes = input.Length != 0 ? Encoding.UTF8.GetBytes(input) : Array.Empty<byte>();
+            var valueBytes = (input.Length != 0) ? Encoding.UTF8.GetBytes(input) : Array.Empty<byte>();
             length = valueBytes.Length;
             value = Marshal.AllocHGlobal(length + 1);
             Marshal.Copy(valueBytes, 0, value, length);
@@ -27,13 +28,10 @@ public unsafe struct MarshaledString : IDisposable
         }
 
         Length = length;
-        Value = (sbyte*) value;
+        Value = (sbyte*)value;
     }
 
-    public ReadOnlySpan<byte> AsSpan()
-    {
-        return new ReadOnlySpan<byte>(Value, Length);
-    }
+    public readonly ReadOnlySpan<byte> AsSpan() => new ReadOnlySpan<byte>(Value, Length);
 
     public int Length { get; private set; }
 
@@ -43,18 +41,15 @@ public unsafe struct MarshaledString : IDisposable
     {
         if (Value != null)
         {
-            Marshal.FreeHGlobal((IntPtr) Value);
+            Marshal.FreeHGlobal((IntPtr)Value);
             Value = null;
             Length = 0;
         }
     }
 
-    public static implicit operator sbyte*(in MarshaledString value)
-    {
-        return value.Value;
-    }
+    public static implicit operator sbyte*(in MarshaledString value) => value.Value;
 
-    public override string ToString()
+    public override readonly string ToString()
     {
         var span = new ReadOnlySpan<byte>(Value, Length);
         return span.AsString();
