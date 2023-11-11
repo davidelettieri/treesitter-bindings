@@ -1,9 +1,5 @@
 namespace TreeSitter.Bindings;
 
-public partial struct TSLanguage
-{
-}
-
 public unsafe partial struct TSLanguage
 {
     [NativeTypeName("uint32_t")]
