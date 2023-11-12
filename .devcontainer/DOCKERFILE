@@ -4,3 +4,4 @@ RUN dnf install clang -y
 RUN dnf install dotnet-sdk-7.0 -y
 RUN dnf install glibc-langpack-en.x86_64 -y
 RUN dnf install git -y
+RUN dnf install libcxx-devel -y

@@ -4,3 +4,12 @@
 [submodule "tree-sitter-json"]
 	path = tree-sitter-json
 	url = https://github.com/tree-sitter/tree-sitter-json.git
+[submodule "tree-sitter-embedded-template"]
+	path = tree-sitter-embedded-template
+	url = https://github.com/tree-sitter/tree-sitter-embedded-template
+[submodule "tree-sitter-html"]
+	path = tree-sitter-html
+	url = https://github.com/tree-sitter/tree-sitter-html
+[submodule "tree-sitter-ruby"]
+	path = tree-sitter-ruby
+	url = https://github.com/tree-sitter/tree-sitter-ruby
