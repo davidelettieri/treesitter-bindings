@@ -22,14 +22,6 @@ unix-types
 tree-sitter/lib/include
 --file
 tree-sitter-embedded-template/bindings/c/et.h
---exclude 
-TSLexer
-TSParseActionType
-TSParseAction
-TSParseActionEntry
-TSParseActionEntry
-TSParseActionEntry
-TSParseActionEntry
 --output
 ./src/TreeSitter.Bindings/EmbdeddedTemplate
 --test-output
