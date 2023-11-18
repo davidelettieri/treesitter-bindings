@@ -9,7 +9,9 @@ using static TreeSitter.Bindings.TSBindings;
 
 unsafe
 {
-    // JsonSample();
+    Console.WriteLine("-- Json sample --");
+    JsonSample();
+    Console.WriteLine("-- Multi language sample --");
     MultiLanguageDocumentSample();
 
     void JsonSample()
