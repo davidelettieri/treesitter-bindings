@@ -9,7 +9,7 @@ public partial struct TSParseActionEntry
     public TSParseAction action;
 
     [FieldOffset(0)]
-    [NativeTypeName("__AnonymousRecord_parser_L84_C3")]
+    [NativeTypeName("__AnonymousRecord_parser_L83_C3")]
     public _entry_e__Struct entry;
 
     public partial struct _entry_e__Struct
