@@ -1,8 +1,8 @@
 --config
 compatible-codegen
+exclude-empty-records
 exclude-com-proxies
 exclude-enum-operators
-exclude-empty-records
 generate-aggressive-inlining
 generate-cpp-attributes
 generate-macro-bindings
@@ -24,7 +24,6 @@ generate-helper-types
 --include-directory 
 /lib64/clang/16/include
 --file
-tree-sitter/lib/include/tree_sitter/api.h
 tree-sitter/lib/include/tree_sitter/parser.h
 --output
 ./src/TreeSitter.Bindings/
@@ -37,4 +36,4 @@ libtree-sitter
 --prefixStrip
 ts_
 --methodClassName
-TSBindings
+TSBindingsParser

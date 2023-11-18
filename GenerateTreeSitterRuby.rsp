@@ -30,7 +30,7 @@ tree-sitter-ruby/bindings/c/ruby.h
 --namespace
 TreeSitter.Bindings.Ruby
 --libraryPath 
-libtree-sitter-Ruby
+libtree-sitter-ruby
 --prefixStrip
 ts_
 --methodClassName
