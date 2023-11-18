@@ -16,7 +16,7 @@
     <file src="../libtreesitter/license.txt" target="license.txt" />
     <file src="libtree-sitter.so" target="runtimes/linux-x64/native/libtree-sitter.so" />
     <file src="libtree-sitter-json.so" target="runtimes/linux-x64/native/libtree-sitter-json.so" />
-    <file src="libtree-sitter-et.so" target="runtimes/linux-x64/native/libtree-sitter-et.so" />
+    <file src="libtree-sitter-embedded-template.so" target="runtimes/linux-x64/native/libtree-sitter-embedded-template.so" />
     <file src="libtree-sitter-html.so" target="runtimes/linux-x64/native/libtree-sitter-html.so" />
     <file src="libtree-sitter-ruby.so" target="runtimes/linux-x64/native/libtree-sitter-ruby.so" />
   </files>
