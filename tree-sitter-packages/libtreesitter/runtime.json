@@ -2,7 +2,7 @@
   "runtimes": {
     "linux-x64": {
       "libtreesitter": {
-        "libtreesitter.runtime.linux-x64": "0.20.8"
+        "libtreesitter.runtime.linux-x64": "0.20.8-1"
       }
     }
   }
