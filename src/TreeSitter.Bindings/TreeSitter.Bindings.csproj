@@ -9,6 +9,7 @@
         <RepositoryUrl>https://github.com/davidelettieri/treesitter-bindings.git</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <Authors>Davide Lettieri</Authors>
+        <MinVerTagPrefix>bindings-</MinVerTagPrefix>
     </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="libtreesitter" Version="0.20.8-extra.4" />
