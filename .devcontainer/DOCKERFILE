@@ -1,7 +1,15 @@
-FROM fedora:38
+FROM fedora:40
 RUN dnf update -y 
 RUN dnf install clang -y
-RUN dnf install dotnet-sdk-7.0 -y
+RUN dnf install dotnet-sdk-8.0 -y
 RUN dnf install glibc-langpack-en.x86_64 -y
 RUN dnf install git -y
 RUN dnf install libcxx-devel -y
+ARG USERNAME=vscode
+ARG USER_UID=1000
+ARG USER_GID=$USER_UID
+RUN groupadd --gid $USER_GID $USERNAME \
+    && useradd --uid $USER_UID --gid $USER_GID -m $USERNAME \
+    && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
+    && chmod 0440 /etc/sudoers.d/$USERNAME
+USER $USERNAME
