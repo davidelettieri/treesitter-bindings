@@ -1,9 +1,9 @@
 {
   "version": 1,
-  "isRoot": true,
+  "isRoot": false,
   "tools": {
     "clangsharppinvokegenerator": {
-      "version": "16.0.0",
+      "version": "17.0.1",
       "commands": [
         "ClangSharpPInvokeGenerator"
       ]
