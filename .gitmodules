@@ -10,3 +10,6 @@
 [submodule "tree-sitter-ruby"]
 	path = tree-sitter-ruby
 	url = https://github.com/davidelettieri/tree-sitter-ruby
+[submodule "tree-sitter"]
+	path = tree-sitter
+	url = https://github.com/tree-sitter/tree-sitter.git
