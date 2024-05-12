@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "isRoot": false,
+  "isRoot": true,
   "tools": {
     "clangsharppinvokegenerator": {
       "version": "17.0.1",

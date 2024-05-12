@@ -1,6 +1,6 @@
 FROM fedora:40
 RUN dnf update -y 
-RUN dnf install clang -y
+RUN dnf install clang17 -y
 RUN dnf install dotnet-sdk-8.0 -y
 RUN dnf install glibc-langpack-en.x86_64 -y
 RUN dnf install git -y

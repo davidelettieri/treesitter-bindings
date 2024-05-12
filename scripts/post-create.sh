@@ -4,5 +4,5 @@ git config --global --add safe.directory /workspaces/TreeSitter.Bindings/tree-si
 git config --global --add safe.directory /workspaces/TreeSitter.Bindings/tree-sitter-embedded-template
 git config --global --add safe.directory /workspaces/TreeSitter.Bindings/tree-sitter
 dotnet tool restore
-cp libClangSharp.so /root/.nuget/packages/clangsharppinvokegenerator/17.0.1/tools/net8.0/any/libClangSharp.so
+cp libClangSharp.so ~/.nuget/packages/clangsharppinvokegenerator/17.0.1/tools/net8.0/any/libClangSharp.so
 chmod +x scripts/build.sh
