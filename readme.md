@@ -24,3 +24,8 @@ Run the sample from the root folder
 ```
 dotnet run --project samples/TreeSitter.Bindings.Sample/TreeSitter.Bindings.Sample.csproj 
 ```
+
+## Remove submodule
+
+git rm <submodule name>
+remove folder .git/module/<submodule name>
