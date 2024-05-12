@@ -1,5 +1,5 @@
 namespace TreeSitter.Bindings;
 
-public partial struct TSLanguage
+public partial struct TSWasmEngine
 {
 }

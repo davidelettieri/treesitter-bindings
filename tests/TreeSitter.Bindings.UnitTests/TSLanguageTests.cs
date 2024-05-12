@@ -1,4 +1,3 @@
-using System;
 using System.Runtime.InteropServices;
 using Xunit;
 
@@ -25,13 +24,6 @@ public static unsafe partial class TSLanguageTests
     [Fact]
     public static void SizeOfTest()
     {
-        if (Environment.Is64BitProcess)
-        {
-            Assert.Equal(232, sizeof(TSLanguage));
-        }
-        else
-        {
-            Assert.Equal(136, sizeof(TSLanguage));
-        }
+        Assert.Equal(1, sizeof(TSLanguage));
     }
 }
