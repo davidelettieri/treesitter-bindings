@@ -21,7 +21,6 @@ unix-types
 --include-directory 
 /lib64/clang/16/include
 tree-sitter/lib/include
-tree-sitter/lib/src
 --file
 tree-sitter-json/bindings/c/json.h
 --output
