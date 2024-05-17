@@ -1,5 +1,6 @@
 --config
 compatible-codegen
+exclude-empty-records
 exclude-com-proxies
 exclude-enum-operators
 generate-aggressive-inlining
