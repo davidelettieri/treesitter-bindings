@@ -19,7 +19,6 @@ multi-file
 preview-codegen
 trimmable-vtbls
 unix-types
-generate-helper-types
 --include-directory 
 /lib64/clang/16/include
 tree-sitter/lib/include

@@ -11,6 +11,13 @@
         <Authors>Davide Lettieri</Authors>
         <MinVerTagPrefix>bindings-</MinVerTagPrefix>
     </PropertyGroup>
+    
+    <ItemGroup>
+        <InternalsVisibleTo Include="TreeSitter.Bindings.Html" />
+        <InternalsVisibleTo Include="TreeSitter.Bindings.Json" />
+        <InternalsVisibleTo Include="TreeSitter.Bindings.Ruby" />
+    </ItemGroup>
+    
     <ItemGroup>
         <PackageReference Include="libtreesitter" Version="0.20.8-extra.4" />
         <PackageReference Include="MinVer" Version="4.3.0">

@@ -19,14 +19,13 @@ multi-file
 preview-codegen
 trimmable-vtbls
 unix-types
-generate-helper-types
 --include-directory 
 /lib64/clang/16/include
 tree-sitter/lib/include
 --file
 tree-sitter-ruby/bindings/c/tree-sitter-ruby.h
 --output
-./src/TreeSitter.Bindings/Ruby
+./src/TreeSitter.Bindings.Ruby/
 --test-output
 ./tests/TreeSitter.Bindings.UnitTests/Ruby
 --namespace
