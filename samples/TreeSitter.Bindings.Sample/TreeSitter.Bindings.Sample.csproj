@@ -10,7 +10,9 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\src\TreeSitter.Bindings.Html\TreeSitter.Bindings.Html.csproj" />
       <ProjectReference Include="..\..\src\TreeSitter.Bindings.Json\TreeSitter.Bindings.Json.csproj" />
+      <ProjectReference Include="..\..\src\TreeSitter.Bindings.Ruby\TreeSitter.Bindings.Ruby.csproj" />
       <ProjectReference Include="..\..\src\TreeSitter.Bindings\TreeSitter.Bindings.csproj" />
     </ItemGroup>
 
