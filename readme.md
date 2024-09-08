@@ -34,10 +34,10 @@ remove folder .git/module/<submodule name>
 
 1. Create runtime packages for tree-sitter using official compiled artifacts.
 2. Create a nuget package for tree-sitter bindings
-3. Create runtime packages for each tree-sitter supported (here) language: so far html, json, embedded-template.
+3. Document how to use existing languages
+4. Create runtime packages for each tree-sitter supported (here) language: so far html, json, embedded-template.
     - If there are official compiled artifacts use those
     - If not, support only linux-x64
-4. Create a nuget package for each language binding
 5. Add tests to check parsing result
 
 ### Why different packages?
