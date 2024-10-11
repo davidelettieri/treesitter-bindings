@@ -1,7 +1,15 @@
-name: Publish TreeSitter on Nuget
+name: Publish Runtime
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - main
+    tags:        
+      - 'runtime-*.*.*'
+    paths-ignore:
+      - 'src/**'
+      - 'tests/**'
+      - 'samples/**'
     
 jobs:
   build:
