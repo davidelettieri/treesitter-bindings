@@ -10,13 +10,15 @@ on:
       - 'src/**'
       - 'tests/**'
       - 'samples/**'
-  pull_request:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          filter: tree:0
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
@@ -28,5 +30,5 @@ jobs:
           version=$(minver -v e)
           nuget pack packages-definitions/libtreesitter/libtreesitter.nuspec -Properties version=$version
           nuget pack packages-definitions/libtreesitter.runtime.linux-x64/libtreesitter.runtime.linux-x64.nuspec -Properties version=$version 
-      # - name: Publish libtreesitter package to Nuget
-      #   run: dotnet nuget push *.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
+      - name: Publish libtreesitter package to Nuget
+        run: dotnet nuget push *.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
