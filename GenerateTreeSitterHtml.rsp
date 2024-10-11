@@ -2,6 +2,7 @@
 compatible-codegen
 exclude-com-proxies
 exclude-enum-operators
+exclude-empty-records
 generate-aggressive-inlining
 generate-cpp-attributes
 generate-macro-bindings
@@ -22,7 +23,7 @@ unix-types
 /lib64/clang/16/include
 tree-sitter/lib/include
 --file
-tree-sitter-html/bindings/c/html.h
+tree-sitter-html/bindings/c/tree-sitter-html.h
 --output
 ./src/TreeSitter.Bindings/Html
 --test-output

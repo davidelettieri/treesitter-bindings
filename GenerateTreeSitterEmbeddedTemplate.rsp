@@ -1,5 +1,6 @@
 --config
 compatible-codegen
+exclude-empty-records
 exclude-com-proxies
 exclude-enum-operators
 generate-aggressive-inlining
@@ -21,7 +22,7 @@ unix-types
 /lib64/clang/16/include
 tree-sitter/lib/include
 --file
-tree-sitter-embedded-template/bindings/c/embedded-template.h
+tree-sitter-embedded-template/bindings/c/tree-sitter-embedded_template.h
 --output
 ./src/TreeSitter.Bindings/EmbdeddedTemplate
 --test-output

@@ -27,11 +27,11 @@ public static unsafe partial class TSTreeCursorTests
     {
         if (Environment.Is64BitProcess)
         {
-            Assert.Equal(24, sizeof(TSTreeCursor));
+            Assert.Equal(32, sizeof(TSTreeCursor));
         }
         else
         {
-            Assert.Equal(16, sizeof(TSTreeCursor));
+            Assert.Equal(20, sizeof(TSTreeCursor));
         }
     }
 }
