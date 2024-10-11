@@ -26,8 +26,8 @@ jobs:
       - name: Compute version
         run: echo "version=$(minver -v e)\n" >> $GITHUB_OUTPUT
       - name: Pack libtreesitter
-        run: nuget pack packages-definitions/libtreesitter/libtreesitter.nuspec
+        run: nuget pack packages-definitions/libtreesitter/libtreesitter.nuspec -version ${{ steps.paths.outputs.version }}
       - name: Pack libtreesitter.runtime.linux-x64
-        run: nuget pack packages-definitions/libtreesitter.runtime.linux-x64/libtreesitter.runtime.linux-x64.nuspec  
+        run: nuget pack packages-definitions/libtreesitter.runtime.linux-x64/libtreesitter.runtime.linux-x64.nuspec -version ${{ steps.paths.outputs.version }}  
       # - name: Publish libtreesitter package to Nuget
       #   run: dotnet nuget push *.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
