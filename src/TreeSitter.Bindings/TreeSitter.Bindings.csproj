@@ -13,8 +13,8 @@
     </PropertyGroup>
     
     <ItemGroup>
-        <PackageReference Include="libtreesitter" Version="0.20.8-extra.4" />
-        <PackageReference Include="MinVer" Version="4.3.0">
+        <PackageReference Include="libtreesitter" Version="0.22.6" />
+        <PackageReference Include="MinVer" Version="6.0.0">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
