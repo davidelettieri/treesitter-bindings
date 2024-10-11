@@ -27,7 +27,7 @@ jobs:
         run: dotnet tool install --global minver-cli --version 6.0.0
       - name: Compute version and pack
         run: |
-          version=$(minver -v e)
+          version=$(minver -v e -t runtime-)
           nuget pack packages-definitions/libtreesitter/libtreesitter.nuspec -Properties version=$version
           nuget pack packages-definitions/libtreesitter.runtime.linux-x64/libtreesitter.runtime.linux-x64.nuspec -Properties version=$version 
       - name: Publish libtreesitter package to Nuget
