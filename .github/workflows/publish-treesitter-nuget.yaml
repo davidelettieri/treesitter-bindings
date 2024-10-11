@@ -10,6 +10,7 @@ on:
       - 'src/**'
       - 'tests/**'
       - 'samples/**'
+  pull_request:
     
 jobs:
   build:
@@ -20,9 +21,13 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: 8.0.x
+      - name: Install minver
+        run: dotnet tool install --global minver-cli --version 6.0.0
+      - name: Compute version
+        run: minver -m
       - name: Pack libtreesitter
         run: nuget pack packages-definitions/libtreesitter/libtreesitter.nuspec
       - name: Pack libtreesitter.runtime.linux-x64
         run: nuget pack packages-definitions/libtreesitter.runtime.linux-x64/libtreesitter.runtime.linux-x64.nuspec  
-      - name: Publish libtreesitter package to Nuget
-        run: dotnet nuget push *.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
+      # - name: Publish libtreesitter package to Nuget
+      #   run: dotnet nuget push *.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
