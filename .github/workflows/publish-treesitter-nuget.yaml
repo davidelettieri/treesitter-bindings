@@ -23,11 +23,10 @@ jobs:
           dotnet-version: 8.0.x
       - name: Install minver
         run: dotnet tool install --global minver-cli --version 6.0.0
-      - name: Compute version
-        run: echo "version=$(minver -v e)\n" >> $GITHUB_OUTPUT
-      - name: Pack libtreesitter
-        run: nuget pack packages-definitions/libtreesitter/libtreesitter.nuspec -Properties version=${{ steps.paths.outputs.version }}
-      - name: Pack libtreesitter.runtime.linux-x64
-        run: nuget pack packages-definitions/libtreesitter.runtime.linux-x64/libtreesitter.runtime.linux-x64.nuspec -Properties version=${{ steps.paths.outputs.version }}  
+      - name: Compute version and pack
+        run: |
+          version=$(minver -v e)
+          nuget pack packages-definitions/libtreesitter/libtreesitter.nuspec -Properties version=$version
+          nuget pack packages-definitions/libtreesitter.runtime.linux-x64/libtreesitter.runtime.linux-x64.nuspec -Properties version=$version 
       # - name: Publish libtreesitter package to Nuget
       #   run: dotnet nuget push *.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json

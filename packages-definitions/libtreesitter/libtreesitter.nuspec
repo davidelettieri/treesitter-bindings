@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata minClientVersion="2.12">
     <id>libtreesitter</id>
-    <version>$version</version>
+    <version>$version$</version>
     <authors>Davide Lettieri</authors>
     <owners>Davide Lettieri</owners>
     <projectUrl>https://github.com/davidelettieri/treesitter-bindings</projectUrl>
