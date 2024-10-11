@@ -25,7 +25,7 @@ tree-sitter/lib/include
 --file
 tree-sitter-ruby/bindings/c/tree-sitter-ruby.h
 --output
-./src/TreeSitter.Bindings.Ruby/
+./src/TreeSitter.Bindings/Ruby
 --test-output
 ./tests/TreeSitter.Bindings.UnitTests/Ruby
 --namespace

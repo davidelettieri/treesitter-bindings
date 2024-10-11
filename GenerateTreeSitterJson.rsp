@@ -25,7 +25,7 @@ tree-sitter/lib/include
 --file
 tree-sitter-json/bindings/c/tree-sitter-json.h
 --output
-./src/TreeSitter.Bindings.Json/
+./src/TreeSitter.Bindings/Json
 --test-output
 ./tests/TreeSitter.Bindings.UnitTests/Json
 --namespace
