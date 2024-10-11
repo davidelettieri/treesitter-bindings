@@ -1,6 +1,5 @@
 --config
 compatible-codegen
-exclude-empty-records
 exclude-com-proxies
 exclude-enum-operators
 generate-aggressive-inlining
@@ -22,9 +21,9 @@ trimmable-vtbls
 unix-types
 generate-helper-types
 --include-directory 
-/lib64/clang/16/include
+/lib64/clang/17/include
 --file
-tree-sitter/lib/include/tree_sitter/parser.h
+tree-sitter/lib/include/tree_sitter/api.h
 --output
 ./src/TreeSitter.Bindings/
 --test-output
@@ -37,3 +36,5 @@ libtree-sitter
 ts_
 --methodClassName
 TSBindingsParser
+--remap
+wasm_engine_t=TSWasmEngine

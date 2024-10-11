@@ -1,15 +1,15 @@
 [submodule "tree-sitter"]
 	path = tree-sitter
-	url = https://github.com/davidelettieri/tree-sitter.git
-[submodule "tree-sitter-json"]
-	path = tree-sitter-json
-	url = https://github.com/davidelettieri/tree-sitter-json.git
+	url = https://github.com/tree-sitter/tree-sitter.git
 [submodule "tree-sitter-embedded-template"]
 	path = tree-sitter-embedded-template
-	url = https://github.com/davidelettieri/tree-sitter-embedded-template
+	url = https://github.com/tree-sitter/tree-sitter-embedded-template.git
+[submodule "tree-sitter-json"]
+	path = tree-sitter-json
+	url = https://github.com/tree-sitter/tree-sitter-json.git
 [submodule "tree-sitter-html"]
 	path = tree-sitter-html
-	url = https://github.com/davidelettieri/tree-sitter-html
+	url = https://github.com/tree-sitter/tree-sitter-html.git
 [submodule "tree-sitter-ruby"]
 	path = tree-sitter-ruby
-	url = https://github.com/davidelettieri/tree-sitter-ruby
+	url = https://github.com/tree-sitter/tree-sitter-ruby.git

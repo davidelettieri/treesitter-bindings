@@ -10,7 +10,7 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/samples/TreeSitter.Bindings.Sample/bin/Debug/net7.0/fedora.38-x64/TreeSitter.Bindings.Sample.dll",
+            "program": "${workspaceFolder}/samples/TreeSitter.Bindings.Sample/bin/Debug/net8.0/fedora.38-x64/TreeSitter.Bindings.Sample.dll",
             "args": [],
             "cwd": "${workspaceFolder}/samples/TreeSitter.Bindings.Sample",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console

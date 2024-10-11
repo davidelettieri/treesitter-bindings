@@ -28,8 +28,8 @@
 				"ms-dotnettools.csharp"
 			]
 		}
-	}
-
+	},
+	"containerUser": "vscode"
 	// Configure tool-specific properties.
 	// "customizations": {},
 

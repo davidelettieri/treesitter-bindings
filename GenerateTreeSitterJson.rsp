@@ -1,5 +1,6 @@
 --config
 compatible-codegen
+exclude-empty-records
 exclude-com-proxies
 exclude-enum-operators
 generate-aggressive-inlining
@@ -22,7 +23,7 @@ unix-types
 /lib64/clang/16/include
 tree-sitter/lib/include
 --file
-tree-sitter-json/bindings/c/json.h
+tree-sitter-json/bindings/c/tree-sitter-json.h
 --output
 ./src/TreeSitter.Bindings/Json
 --test-output
