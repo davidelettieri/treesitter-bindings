@@ -22,7 +22,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\src\TreeSitter.Bindings.Json\TreeSitter.Bindings.Json.csproj" />
       <ProjectReference Include="..\..\src\TreeSitter.Bindings\TreeSitter.Bindings.csproj" />
     </ItemGroup>
 
