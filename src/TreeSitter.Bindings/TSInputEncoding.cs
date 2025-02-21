@@ -4,5 +4,7 @@ namespace TreeSitter.Bindings;
 public enum TSInputEncoding : uint
 {
     TSInputEncodingUTF8,
-    TSInputEncodingUTF16,
+    TSInputEncodingUTF16LE,
+    TSInputEncodingUTF16BE,
+    TSInputEncodingCustom,
 }
