@@ -25,6 +25,10 @@ jobs:
           dotnet-version: 8.0.x
       - name: Install minver
         run: dotnet tool install --global minver-cli --version 6.0.0
+      - uses: nuget/setup-nuget@v2
+        with:
+          nuget-api-key: ${{ secrets.NUGET_API_KEY }}
+          nuget-version: '5.x'
       - name: Compute version and pack
         run: |
           version=$(minver -v e -t runtime-)
