@@ -8,4 +8,7 @@ public unsafe partial struct TSInput
     public delegate* unmanaged[Cdecl]<void*, uint, TSPoint, uint*, sbyte*> read;
 
     public TSInputEncoding encoding;
+
+    [NativeTypeName("DecodeFunction")]
+    public delegate* unmanaged[Cdecl]<byte*, uint, int*, uint> decode;
 }

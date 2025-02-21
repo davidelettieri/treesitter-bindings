@@ -27,11 +27,11 @@ public static unsafe partial class TSInputTests
     {
         if (Environment.Is64BitProcess)
         {
-            Assert.Equal(24, sizeof(TSInput));
+            Assert.Equal(32, sizeof(TSInput));
         }
         else
         {
-            Assert.Equal(12, sizeof(TSInput));
+            Assert.Equal(16, sizeof(TSInput));
         }
     }
 }

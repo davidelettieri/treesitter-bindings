@@ -5,5 +5,6 @@ public enum TSSymbolType : uint
 {
     TSSymbolTypeRegular,
     TSSymbolTypeAnonymous,
+    TSSymbolTypeSupertype,
     TSSymbolTypeAuxiliary,
 }
