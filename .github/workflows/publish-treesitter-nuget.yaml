@@ -28,7 +28,7 @@ jobs:
       - uses: nuget/setup-nuget@v2
         with:
           nuget-api-key: ${{ secrets.NUGET_API_KEY }}
-          nuget-version: '5.x'
+          nuget-version: latest
       - name: Compute version and pack
         run: |
           version=$(minver -v e -t runtime-)
