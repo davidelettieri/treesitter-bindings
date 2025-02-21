@@ -7,7 +7,9 @@
         // Path is relataive to the devcontainer.json file.
         "dockerfile": "DOCKERFILE"
     },
-
+	"runArgs": [
+	"--userns=keep-id"
+	],
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},

@@ -22,7 +22,7 @@ unix-types
 /lib64/clang/16/include
 tree-sitter/lib/include
 --file
-tree-sitter-embedded-template/bindings/c/tree-sitter-embedded_template.h
+tree-sitter-embedded-template/bindings/c/tree-sitter-embedded-template.h
 --output
 ./src/TreeSitter.Bindings/EmbdeddedTemplate
 --test-output
