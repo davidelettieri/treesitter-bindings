@@ -29,3 +29,7 @@ dotnet run --project samples/TreeSitter.Bindings.Sample/TreeSitter.Bindings.Samp
 
 git rm <submodule name>
 remove folder .git/module/<submodule name>
+
+### Update submodule 
+
+git submodule update --recursive

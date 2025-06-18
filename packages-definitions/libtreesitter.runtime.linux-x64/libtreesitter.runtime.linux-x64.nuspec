@@ -9,7 +9,7 @@
     <description>tree-sitter library</description>
     <copyright>Copyright © Max Brunsfeld</copyright>
     <dependencies>
-      <group targetFramework=".net8.0" />
+      <group targetFramework=".net9.0" />
     </dependencies>
   </metadata>
   <files>
