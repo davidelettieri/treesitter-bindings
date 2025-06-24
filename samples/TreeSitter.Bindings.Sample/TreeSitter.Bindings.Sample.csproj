@@ -14,4 +14,8 @@
       <ProjectReference Include="..\..\src\TreeSitter.Bindings\TreeSitter.Bindings.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="libtreesitter" Version="0.25.2" />
+    </ItemGroup>
+
 </Project>
